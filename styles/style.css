@@ -12,6 +12,10 @@ body {
     background: #101010;
 }
 
+.barContainer {
+    margin-top: 16px;
+}
+
 .container {
     position: relative;
     width: 900px;
