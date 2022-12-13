@@ -16,6 +16,14 @@ function setJavascriptValue() {
     javascriptValue.innerHTML = barInputValue.value + '<span>%</span>';
 }
 
-setHtmlValue();
-setCssValue();
-setJavascriptValue();
+let htmlValue = document.getElementById("htmlValue");
+let htmlBarInputValue = document.getElementById("htmlPercentBar");
+htmlBarInputValue.value = htmlValue.innerHTML.substring(0, 2);
+
+let cssValue = document.getElementById("cssValue");
+let cssBarInputValue = document.getElementById("cssPercentBar");
+cssBarInputValue.value = cssValue.innerHTML.substring(0, 2);
+
+let jsValue = document.getElementById("jsValue");
+let jsBarInputValue = document.getElementById("jsPercentBar");
+jsBarInputValue.value = jsValue.innerHTML.substring(0, 2);
