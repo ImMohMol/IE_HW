@@ -35,7 +35,7 @@ body {
     width: 48px;
     height: 104px;
     position: absolute;
-    bottom: -20px;
+    bottom: -15px;
     left: 50%;
     transform: translate(-50%);
     z-index: 2;
@@ -51,4 +51,36 @@ body {
     border-radius: 50%;
     position: absolute;
     bottom: 0;
+}
+
+#selectValue {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    background: #ffd200;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#selectValue::after {
+    content: '';
+    border-top: 17px solid #ffd200;
+    border-left: 24px solid #000;
+    border-right: 24px solid #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#progressBar {
+    width: 50%;
+    height: 7px;
+    background: #ffd200;
+    border-radius: 3px;
+    position: absolute;
+    top: 8px;
+    left: 0;
 }
